@@ -1,0 +1,21 @@
+# Core dependencies for process mining and data analysis
+pm4py==2.7.18
+pandas==2.3.3
+networkx==3.5
+matplotlib==3.10.7
+more-itertools==10.8.0
+IPython==9.6.0
+
+# Jupyter/IPython dependencies
+ipykernel>=6.0.0
+
+# Note: Graphviz alternative - using networkx + matplotlib instead of pygraphviz
+# pygraphviz has installation issues on macOS with Apple Silicon
+# - Installing pygraphviz manually: pip install --global-option=build_ext --global-option="-I$(brew --prefix graphviz)/include/" --global-option="-L$(brew --prefix graphviz)/lib/" pygraphviz
+
+# Note: Vampire theorem prover
+# Install separately from: https://vprover.github.io/
+# Add to PATH or use full path in code
+
+# BPI dataset: https://data.4tu.nl/articles/dataset/BPI_Challenge_2019/12715853/1
+# Hospital Billing: https://data.4tu.nl/articles/dataset/Hospital_Billing_-_Event_Log/12705113/1
